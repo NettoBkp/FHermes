@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
-import imaGemA from "../img/fogo-red.jpg";
-import imaGemBk from "../img/fisica5.png";
-import imaGemB from "../img/fisica6.png";
+import imaGemA from "../img/atomo5.gif";
+import imaGemBk from "../img/fisica9.png";
+import imaGemB from "../img/Einstein234.gif";
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import imaGem from "../img/google.png";

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NTalking from './components/noteTalkingBd';
+import NTalking from './components/noteTaking';
 import Login from './components/Login';
 import Teste from './components/Teste';
 import Slide from './components/slide';

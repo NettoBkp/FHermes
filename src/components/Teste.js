@@ -71,7 +71,7 @@ class Teste extends Component {
                     <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
                     <div  className="row card-panel hoverable">
                         <p />                        
-                        <div lang="pt-BR" className="box3 card-panel hoverable col s12 m12 box7 minA scale-transition">
+                        <div className="box3 card-panel hoverable col s12 m12 minA scale-transition">
                         <MyButton handleClick={this.setLabelText} text={<PgInicial/>} label="Início" icon="home" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 box4 minA scale-transition" />                                                                                          
                         <MyButton handleClick={this.setLabelText} text={<PgArquivo/>} label="Arquivo" icon="archive" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 box4 minA scale-transition" />                        
                         <p/>
