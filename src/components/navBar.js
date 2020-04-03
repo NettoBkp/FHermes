@@ -17,7 +17,6 @@ class NavBar extends Component {
         super(props);
         this.state = {
             redirect: false
-
         }
         this.logout = this.logout.bind(this);
     }
@@ -61,9 +60,8 @@ class NavBar extends Component {
         });
     }
     render() {
-
         return (
-            <Fragment>
+            <Fragment>                
                 <div id="header-holder">
                     <div id="">
                         <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
@@ -114,7 +112,7 @@ class NavBar extends Component {
                             <li><a onClick={this.logout} href="/logout"><i className="material-icons">logout</i>Sair</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>                
             </Fragment>
         )
     }

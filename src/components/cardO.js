@@ -11,7 +11,7 @@ class CardO extends Component {
     render() {                     
         return (
             <Fragment>         
-                <MyButtonRnd />                       
+                <MyButtonRnd />                  
                 <div id="dani" className="CardA col s12 m8 offset-m2 l6 offset-l3" >
                     <div className="card-panel CardD z-depth-1">
                         <div className="row valign-wrapper">

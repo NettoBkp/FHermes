@@ -17,10 +17,10 @@ class Login extends Component {
     }
 
     login() {
-        console.log(this.state);
+       // console.log(this.state);
         PostData(this.state).then((result) => {
             let responseJSON = result;
-            console.log(responseJSON);
+            //console.log(responseJSON);
             if (responseJSON.token) {
                 sessionStorage.setItem('userData', responseJSON.token);
                 this.setState({ redirect: true });
@@ -48,12 +48,12 @@ class Login extends Component {
         }
 
         return (
-            <Fragment>
+            <Fragment>                
                 <div>
                     <body>
                         <div>
                             <form className="box">
-                                <h2> Login </h2>
+                                <h2> Conecte-se </h2>
                                 <br/>
                                 <div className="inputBox">
                                     <input type="text" name="username" required="" onChange={this.onChange} />
@@ -68,7 +68,7 @@ class Login extends Component {
                             </form>
                         </div>
                     </body>                   
-                </div>
+                </div>                
             </Fragment>
 
         );

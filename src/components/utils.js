@@ -31,7 +31,7 @@ class Utils extends Component {
       return (<Redirect to={'/login'} />);
     }
     return (
-      <Fragment>
+      <Fragment>        
         <header>
           <NavBar />
         </header>
