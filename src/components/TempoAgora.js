@@ -4,8 +4,7 @@ import axios from 'axios';
 
 function TempoAgora() {
   const [location, setLocation] = useState(false);
-  const [weather, setWeather] = useState(false);
-  
+  const [weather, setWeather] = useState(false); 
 
   let getWeather = async (lati, longi) => {
     let res = await axios.get("http://api.openweathermap.org/data/2.5/weather", {
@@ -26,7 +25,7 @@ function TempoAgora() {
       console.log(position.coords.latitude, position.coords.longitude);
       setLocation(true)
     })
-  }, [])
+  }, [])  
 
   if (location === false) {
     return (
@@ -44,15 +43,13 @@ function TempoAgora() {
     return (
       
       <Fragment>                      
-        <div >
-          Clima na sua Região:
+        <div className="card-panel hoverable">
+          <h5>Clima no CEFET-NF:</h5>
           <hr/>
           <p className="c">{weather['weather'][0]['description']}</p>
           <hr/>
           <ul>
-            <li>Temperatura atual: {weather['main']['temp']}°</li>
-            <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
-            <li>Temperatura minima: {weather['main']['temp_min']}°</li>
+            <li>Temperatura atual:<h4 className="mTemp card-panel hoverable"> {weather['main']['temp']}° </h4></li>                       
             <li>Pressão: {weather['main']['pressure']} hpa</li>
             <li>Humidade: {weather['main']['humidity']}%</li>
           </ul>

@@ -1,14 +1,19 @@
+import React, { Component } from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
+
 class MyButton extends Component {
     render() {
-        return (
+        return (            
             <button
-                className="inputBox2"
+                className="inputBtn2"
                 type="Mybutton"
-                name="btn"
-                onClick={() => { this.props.handleClick(this.props.text); }}
+                name="btn"                
+                onFocus={() => { this.props.handleClick(this.props.text); }} 
+                onClick={() => { this.props.NClick(this.props.nClass); }}                       
             >
-                {this.props.label}
+               <i className="material-icons MyIcon3 md-30">{this.props.icon}</i> {this.props.label}
             </button>
+            
         )
     }
 }

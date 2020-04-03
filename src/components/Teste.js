@@ -1,30 +1,19 @@
 import React, { Fragment, Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import '../components/NTest.css';    
+import '../components/NTest.css';
 import NavBar from '../components/navBar';
-import Tempo from '../components/TempoAgora';
-import AlistaBd from '../components/Alista';
+import PgInicial from '../components/PageInicial';
+import PgArquivo from '../components/PageArquivo';
+import MyButton from '../components/MyButton';
 
-class MyButton extends Component {
-    render() {
-        return (
-            <button
-                className="inputBox2 light-blue darken-4"
-                type="Mybutton"
-                name="btn"
-                onClick={() => { this.props.handleClick(this.props.text); }}
-            >
-                {this.props.label}
-            </button>
-        )
-    }
-}
+let userN = sessionStorage.getItem('userData');
 
+var img = '';
 class MyLabel extends Component {
     render() {
         return (
-            <div class="o texto vai aqui em baixo">                  
-                 {this.props.text} 
+            <div class="o texto vai aqui em baixo">
+                {this.props.text}                
             </div>
         )
     }
@@ -32,34 +21,32 @@ class MyLabel extends Component {
 class Teste extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            redirect: false,
-            labelText: '',
-            data: []
+        this.state = {            
+            labelText: [
+                <PgInicial/>
+            ],
+            ClassN: "card-panel hoverable col s12 m12 box4 min scale-transition ",            
+            data: [],
+            agenda: []
         }
-        this.setLabelText = this.setLabelText.bind(this);
-        this.logout = this.logout.bind(this);
+        this.setClassName = this.setClassName.bind(this);
+        this.setLabelText = this.setLabelText.bind(this);       
     }
-
+    setClassName(ClassN){
+        this.setState({ ClassN });       
+    }
     setLabelText(labelText) {
         this.setState({ labelText });
     }
-    componentDidMount() {
+    componentDidMount() {        
         if (sessionStorage.getItem('userData')) {
-            console.log('User Logged in');
+            console.log(sessionStorage.getItem('username'));
         } else {
             this.setState({ redirect: true });
-
         }
-    }
-    logout() {
-        //    console.log('logout');
-        sessionStorage.setItem('userData', '');
-        sessionStorage.clear();
-        this.setState({ redirect: true });
-    }
+    }    
     teste() {
-        return(
+        return (
             <Fragment>
                 <header> Teste Ok </header>
             </Fragment>
@@ -67,35 +54,38 @@ class Teste extends Component {
     }
 
     render() {
-        const { data } = (this.state);
+        const { data } = (this.state);        
         console.log(this.state);
+
         if (this.state.redirect) {
             return (<Redirect to={'/login'} />);
         }
         return (
             <Fragment>
                 <header>
-                    <NavBar/>                    
-                </header>                
-                <body className="box">
-                    <div>                        
-                        <MyButton handleClick={this.setLabelText} type="text" text="Art System Ti" label="Botão 1" />
-                        <MyButton handleClick={this.setLabelText} text="Domingos Netto" label="Botão 2" />
-                        <MyButton handleClick={this.setLabelText} text="" label="Botão 3" />
-                        <MyButton handleClick={this.setLabelText} text={<Redirect to={'/taking'} />} label="NTaking" />
-                        <MyButton handleClick={this.setLabelText} text={<Tempo/>} label="tp" />
-                        <MyButton handleClick={this.setLabelText} text={<AlistaBd/>} label="Lista" />
-                        <MyLabel text={this.state.labelText} />                                                                      
-                    </div>                                        
-                </body>
-                
-                                                           
-                        <ul>{data.map(item => <li>{item.full_name}</li>)}</ul>
-                    
+                    <NavBar />
+                </header>
+                <div className="CardA">
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+                    <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
+                    <div  className="row card-panel hoverable">
+                        <p />                        
+                        <div className="box3 card-panel hoverable col s12 m12 box7 minA scale-transition">
+                        <MyButton handleClick={this.setLabelText} text={<PgInicial/>} label="Início" icon="home" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 box4 minA scale-transition" />                                                                                          
+                        <MyButton handleClick={this.setLabelText} text={<PgArquivo/>} label="Arquivo" icon="archive" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 box4 minA scale-transition" />                        
+                        <p/>
+                        <MyLabel text={this.state.labelText} />
+                        {this.state.username}
+                    </div>    
+                    </div>                                 
+                </div>
+                <ul>{data.map(item => <li>{item.labelText}</li>)}</ul>
             </Fragment>
         )
     }
 }
 // <MyLabel text={this.state.labelText} />    pode ser colodaco porcima dos botoes
 //<ul>{data.map(item => <li>{item.full_name}</li>)}</ul> depois de footer
+//<MyButton handleClick={this.setLabelText} text={<Redirect to={'/talking'} />} label="NTaking" />
+//<MyButton handleClick={this.setLabelText} text={<AlistaBd />} label="Lista" />  
 export default Teste;
