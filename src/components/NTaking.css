@@ -1,0 +1,107 @@
+body{
+    background-color: rgba(21, 223, 72, 0.493);      
+    text-shadow: 0.2em 0.2em 0.4em black      
+    /*border-bottom: 1px solid #fff;*/
+}
+.headerTop{
+    background-color: rgb(8, 92, 40);    
+    padding: 10px;
+    text-align: center;
+    background: url(../img/bak6.jpg);  
+    color: #fff;
+    text-shadow: 0.2em 0.2em 0.3em black      
+}
+.main-content ul {
+    text-align: center;    
+    list-style: none;
+}
+.main-content ul li {
+    padding: 20px;    
+    background-color: rgb(117, 74, 10);
+    border-radius: 10px;
+    margin: 10px 0;
+    color:#fff;
+}
+.box2 .pacole{
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+}
+.box2 
+{
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  padding: 10px;
+  background: rgba(255,255,255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 10px 25px 25px rgba(0,0,0, 1);
+  border-radius: 10px;
+  font-weight: bold;  
+}
+.box4 
+{
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -80%);
+  width: 450px;
+  padding: 10px;
+  background: rgba(255,255,255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 10px 25px 25px rgba(0,0,0, 1);
+  border-radius: 10px;
+  font-weight: bold;  
+}
+.box5
+{
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  color: #000;
+  transform: translate(-50%, -30%);
+  width: 450px;
+  padding: 10px;
+  background: rgba(255,255,255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 10px 25px 25px rgba(0,0,0, 1);
+  border-radius: 10px;
+  font-weight: bold;  
+}
+footer form input,
+footer form textarea {    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: rgb(117, 74, 10);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;    
+    font-weight: bold;
+    height: 30px;
+}
+footer form button,
+header button,
+body button{
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff; 
+    width: 200px;    
+}
+.main-content{
+    scroll-margin: 8px;
+    margin-right: 40px;        
+}

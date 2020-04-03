@@ -1,0 +1,48 @@
+.inputBox2
+{
+    background: rgb(117, 74, 10);    
+    color: #fff;
+    padding: 18px 10px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.box3 button[type = "Mybutton"]:hover{
+    background: #fff;
+    color: rgb(0, 255, 106); 
+}
+.box3 button[type = "Mybutton"]:focus
+{
+  background: #fff;
+  color: rgb(0, 255, 106);    
+  padding: 18px 10px;
+  width: 250px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.box3 footer{
+  position: absolute;    
+  color: #000;
+  background: transparent;
+  text-align: justify;
+  text-shadow: 0.2em 0.2em 0.3em white      
+}
+.tempo{
+  text-align: justify;  
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-150%, 1%);
+  width: 350px;
+  padding: 10px;
+  background: rgba(255,255,255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 10px 25px 25px rgba(0,0,0, 1);
+  border-radius: 10px;
+  font-weight: bold;  
+}
+.c{
+  text-align: center;
+}
