@@ -1,11 +1,16 @@
+
 @media (min-width: 770px) {
 	body {
+    background: url(../img/bak7.jpg);
+    background-size: cover;  
     font-size: 26px;
     line-height: 1.2;     
 	}
 }
 @media (max-width: 769px) {
 	body {
+    background: url(../img/bak3.jpg);
+    background-size: cover;  
     font-size: 20px;    
 /*		line-height: 1.63; */
   }
@@ -16,6 +21,8 @@
 		width: 530px;  
   }
   body{
+    background: url(../img/bak1.jpg);
+    background-size: cover;  
     font-size: 16px;   
     width: 530px;  
     height: 100%; 
@@ -67,6 +74,7 @@
 }
 .box3 
 {
+  min-width: 495px;
   text-align: center;
   position: flex;
   color: #000;  
@@ -196,8 +204,9 @@
   width: 60vw;
   height: 50vh;
   float: left;
-  background-image: url(../img/bak8.jpg);
-  background-size: cover;
+  background-image: url(../img/small.gif);
+  background-size: 50vh;
+  background-repeat: no-repeat;
   clip-path: circle(70% at 0% 50%);
   shape-outside: circle(70% at 0% 50%) border-box;
   shape-margin: 2em;

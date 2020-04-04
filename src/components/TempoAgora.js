@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 
-
 function TempoAgora() {
   const [location, setLocation] = useState(false);
   const [weather, setWeather] = useState(false); 
@@ -23,7 +22,7 @@ function TempoAgora() {
     navigator.geolocation.getCurrentPosition((position) => {
       getWeather(position.coords.latitude, position.coords.longitude);
       console.log(position.coords.latitude, position.coords.longitude);
-      setLocation(true)
+      setLocation(true);
     })
   }, [])  
 

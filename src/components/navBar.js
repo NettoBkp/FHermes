@@ -56,12 +56,12 @@ class NavBar extends Component {
                 indicators: true,
                 duration: 300
             });
-
         });
     }
     render() {
         return (
-            <Fragment>                
+            <Fragment>     
+                           
                 <div id="header-holder">
                     <div id="">
                         <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
@@ -93,7 +93,7 @@ class NavBar extends Component {
                             </div>
                         </nav>
 
-                        <ul className="sidenav grey grey lighten-1 accent-4" id="mobile-demo">
+                        <ul className="sidenav blue lighten-4" id="mobile-demo">
                             <li>
                                 <div className="user-view" >
                                     <div className="background">

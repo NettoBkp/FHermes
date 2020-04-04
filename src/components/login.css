@@ -1,7 +1,8 @@
-body{
+body {
   background: url(../img/bak3.jpg);
   background-size: cover;  
 }
+
 body {         
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;       
@@ -9,9 +10,7 @@ body {
   padding: 0;    
   font-size: 16px;      
 }
-body .form {
-background: url(../img/bak1.jpg);
-}
+
 body input {         
   font-weight: bold;      
   width: 250px;

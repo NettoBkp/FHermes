@@ -49,9 +49,8 @@ class Login extends Component {
 
         return (
             <Fragment>                
-                <div>
                     <body>
-                        <div>
+                        <div  className="bk2">
                             <form className="box">
                                 <h2> Conecte-se </h2>
                                 <br/>
@@ -68,7 +67,6 @@ class Login extends Component {
                             </form>
                         </div>
                     </body>                   
-                </div>                
             </Fragment>
 
         );

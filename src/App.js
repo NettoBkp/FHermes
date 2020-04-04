@@ -17,10 +17,8 @@ import Route from 'react-router-dom/Route';
 
 class App extends Component {
   render() {
-    return (
-      
-      <Router>
-        
+    return (      
+      <Router>        
         <div className="hermes-app">
           <Route path="/" exact component={Teste}></Route>
           <Route path="/login" exact component={Login}></Route>
@@ -32,8 +30,7 @@ class App extends Component {
           <Route path="/list" exact component={AlistaBd}></Route>          
           <Route path="/docentes" exact component={Docentes}></Route>          
           <Route path="/logout" exact component={loogout}></Route>          
-          <Route path="/utils" exact component={Utils}></Route>          
-          
+          <Route path="/utils" exact component={Utils}></Route>             
           <Route path="/eventos" exact component={Eventos}></Route>          
           <Route path="/swiper" exact component={mySwiper}></Route>
         </div>
@@ -41,6 +38,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
