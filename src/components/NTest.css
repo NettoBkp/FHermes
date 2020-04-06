@@ -117,7 +117,7 @@
 .MyBt{
   text-align: center;
   background: #fff;
-  padding: 18px 10px;
+  padding: 18p 10px;
   font-size: 16px;
   color: #fff;
   letter-spacing: 1px;  
@@ -125,17 +125,17 @@
   transition: 0.5s;  
 }
 .CardA1 {
-  text-shadow: none; 
-  padding: 0px 10px; 
+  text-shadow: none;    
 }
-.CardA {
+.CardA {  
+  text-shadow: none;  
   padding: 0px 10px;
-  text-shadow: none;
+  border-radius: 0px; 
   
 }
 .CardA i, .CardA1 i{  
   margin-left: 2px;
-  padding: 5px;
+  padding: -5px;
   top: 15%;
   left: 50%;
   transform: translate(-5%, 15%);
@@ -153,7 +153,7 @@
 }
 .CardD {
   background-color: #bbdefb;
-  border-radius: 115px;
+  border-radius: 5px;
   min-width: 510px;   
 }
 .CardN {

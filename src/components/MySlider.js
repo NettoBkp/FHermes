@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
 import Slidedimg from './PageSliderImg';
+import img1 from '../img/4.jpg';
 
 class MySlid extends Component {
     constructor(props) {
@@ -29,9 +30,9 @@ class MySlid extends Component {
 
         if (this.props.slideName === "inicial") {
             
-            datas[0] = "https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920.jpg";
-            title[0] = " Título Flores";
-            slogan[0] = "Here's our small slogan.";
+            datas[0] = `${img1}`;
+            title[0] = "Front Page";
+            slogan[0] = "Slogan Front";
             datas[1] = "https://scx1.b-cdn.net/csz/news/800/2019/2-nature.jpg";
             title[1] = " Título dois";
             slogan[1] = "Here's our small slogan.";

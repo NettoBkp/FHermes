@@ -9,7 +9,7 @@ class MyVd extends Component {
         return (
             <body className="row">
                 <div className="col s10 m10">
-                    <MSlide slideName="transport" classNN="slider" />                    
+                    <MSlide slideName="inicial" classNN="slider" />                    
                 </div>
                 <div className="col s2 m2">
                 <MyIm imgName="inicial" />                

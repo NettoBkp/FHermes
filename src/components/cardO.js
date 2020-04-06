@@ -12,7 +12,7 @@ class CardO extends Component {
         return (
             <Fragment>         
                 <MyButtonRnd />                  
-                <div id="dani" className="CardA col s12 m8 offset-m2 l6 offset-l3" >
+                <div id="dani" className="CardA box9 col s12 m8 offset-m2 l6 offset-l3" >
                     <div className="card-panel CardD z-depth-1">
                         <div className="row valign-wrapper">
                             <div className="col s2 m2">
@@ -36,7 +36,7 @@ class CardO extends Component {
                         </div>
                     </div>                    
                 </div>
-                <div id="dada" className="CardA col s12 m8 offset-m2 l6 offset-l3" >
+                <div id="dada" className="CardA box9 col s12 m8 offset-m2 l6 offset-l3" >
                     <div className="card-panel CardD z-depth-1">
                         <div className="row valign-wrapper">
                             <div className="col s2 m2">
@@ -60,7 +60,7 @@ class CardO extends Component {
                         </div>
                     </div>
                 </div>
-                <div id="si" className="CardA col s12 m8 offset-m2 l6 offset-l3" >
+                <div id="si" className="CardA box9 col s12 m8 offset-m2 l6 offset-l3" >
                     <div className="card-panel CardD z-depth-1">
                         <div className="row valign-wrapper">
                             <div className="col s2">

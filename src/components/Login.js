@@ -50,7 +50,7 @@ class Login extends Component {
         return (
             <Fragment>                
                     <body>
-                        <div  className="bk2">
+                        <div>
                             <form className="box">
                                 <h2> Conecte-se </h2>
                                 <br/>
