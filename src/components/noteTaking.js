@@ -9,8 +9,8 @@ class NTaking extends Component {
         <header>
           <NavBar />
         </header>
-        <div >        
-        <iframe className="box8" src="https://nchathermes.herokuapp.com/" width="100%" height="600" scrolling="yes" allowfullscreen></iframe>
+        <div>        
+        <iframe className="box8" src="https://nchathermes.herokuapp.com/" width="100%" height="700" scrolling="yes" allowfullscreen></iframe>
         </div>
       </Fragment>
     );
