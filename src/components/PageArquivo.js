@@ -70,18 +70,18 @@ class MyPgArquivo extends Component {
                     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"></link>              
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
-                    <div  className="row">    
+                    
                                                              
-                        <div className="card-panel hoverable col s12 box8 m12 scale-transition">                        
+                        <div className="hoverable box8">                        
                         <MyButton handleClick={this.setLabelText} text={                    
                             <div>
                                 <MyButton handleClick={this.setLabelText} icon="donut_large" label="Ângulos Notáveis"  type="text" text={<Fragment>Ângulos Notáveis<img width="100%" src={imaGemT} /></Fragment>} NClick={this.setClassName} nClass="box4 scale-transition scale-out" />
                                 <MyButton handleClick={this.setLabelText} icon="radio_button_unchecked" label="Circulo Trigonométrico" type="text" text={<Fragment><h5>Circulo Trigonométrico</h5><img width="100%" src={imaGemBt} /></Fragment>} NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                                
                                 <MyButton handleClick={this.setLabelText} icon="timeline" label="Geo Gebra" text={<iframe className="box8" src="https://www.geogebra.org/graphing?lang=pt" width="100%" height="800" scrolling="yes" allowfullscreen></iframe>} NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                          
                                 <MyButton handleClick={this.setLabelText} icon="functions" label="Razões Trigonométricas" text={<iframe className="box8" src="https://www.geogebra.org/m/mpsuktyw" width="100%" height="800" scrolling="yes" allowfullscreen></iframe>} NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                                                                                          
-                                
+                                <p/>
                             </div>                                                                                                               
-                        } label="Tools" icon="build" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 minA scale-transition" />                        
+                        } label="Tools" icon="build" NClick={this.setClassName} nClass="hoverable box8" />                        
                         
                         <MyButton handleClick={this.setLabelText} text={                    
                             <div>                                                                                    
@@ -91,14 +91,13 @@ class MyPgArquivo extends Component {
                                 <MyButton handleClick={this.setLabelText} icon="call_missed_outgoing" label="Movimento do Projétil"  text={<iframe className="box8" src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html" width="100%" height="600" scrolling="no" allowfullscreen></iframe>} NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                                
                                 <MyButton handleClick={this.setLabelText} icon="compare_arrows"  label="myphysicslab" text={<iframe className="box8" src="https://www.myphysicslab.com/index-en.html" width="100%" height="600" scrolling="yes" allowfullscreen></iframe>} NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                                                                
                                 <MyButton handleClick={this.setLabelText} icon="all_inclusive"  label="Superposição de ondas" text={<iframe className="box8" src="http://www.falstad.com/dispersion/" width="100%" height="600" scrolling="yes" allowfullscreen></iframe>}  NClick={this.setClassName} nClass="col s1 m1 box4 scale-transition scale-out" />                                                                                                                               
-                                
+                                <p/>
                             </div>                                                                                                               
-                        } label="Labs" icon="dashboard" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12 minA scale-transition" />                        
+                        } label="Labs" icon="dashboard" NClick={this.setClassName} nClass="hoverable box8" />                        
                         <p/>
                         <MyLabel text={this.state.labelText} />
                         {this.state.username}
-                    </div>    
-                    </div>                                 
+                    </div>                        
                 
                 <ul>{data.map(item => <li>{item.labelText}</li>)}</ul>
             </Fragment>

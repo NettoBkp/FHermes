@@ -68,8 +68,7 @@ class Teste extends Component {
                 <div className="CardA">
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One|Paytone+One&display=swap" rel="stylesheet"></link>
-                    <div  className="row card-panel hoverable">
-                        <p />                        
+                    <div  className="box8 b8 hoverable">                                     
                         <div className="box3">
                         <MyButton handleClick={this.setLabelText} text={<PgInicial/>} label="Início" icon="home" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12   scale-transition" />
                         <MyButton handleClick={this.setLabelText} text={<PgArquivo/>} label="Arquivo" icon="archive" NClick={this.setClassName} nClass="card-panel hoverable col s12 m12   scale-transition" />
