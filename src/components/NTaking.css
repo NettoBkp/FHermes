@@ -292,6 +292,7 @@ border-bottom-left-radius: 176px;
 }
 .b8{
   background-color: #fff;
+  box-sizing: content-box;
 }
 .box9{
   padding: 0px 10px;
