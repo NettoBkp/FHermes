@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
 import imaGemA from "../img/atomo5.gif";
@@ -68,7 +69,7 @@ class NavBar extends Component {
                         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
 
                         <ul id="dropdown1" className="dropdown-content">
-                            <li><a href="/docentes">Docentes</a></li>
+                            <li><Link to="/docentes">Docentes</Link></li>
                             <li><a href="#!">Drop 2 </a></li>
                             <li><a href="#!">Drop 3</a></li>
                         </ul>
@@ -76,16 +77,16 @@ class NavBar extends Component {
                         <nav className="nav-extended">
                             <div className="nav-wrapper blue darken-2">
 
-                                <a href="/" className="brand-logo">Física</a>
-                                <a href="/" data-target="mobile-demo" className="sidenav-trigger pulse"><i className="material-icons"><i className="material-icons">view_list</i></i></a>
+                                <Link to="/" className="brand-logo">Física</Link>
+                                <Link to="/" data-target="mobile-demo" clasName="sidenav-trigger pulse"><i className="material-icons"><i className="material-icons">view_list</i></i></Link>
                                 
                                     <ul className="tabNav right hide-on-med-and-down" >
-                                        <li className=""><a href="/"><i className="material-icons">home</i></a></li>
-                                        <li className=""><a href="/docentes"><i className="material-icons">school</i></a></li>
-                                        <li className=""><a class="active" href="/talking"><i className="material-icons">forum</i></a></li>
-                                        <li className=""><a href="/eventos"><i className="material-icons">event_note</i></a></li>
-                                        <li className=""><a href="/utils"><i className="material-icons">settings</i></a></li>
-                                        <li><a onClick={this.logout} href="/logout"><i className="material-icons">logout</i></a></li>
+                                        <li className=""><Link to="/"><i className="material-icons">home</i></Link></li>
+                                        <li className=""><Link to="/docentes"><i className="material-icons">school</i></Link></li>
+                                        <li className=""><Link class="active" to="/talking"><i className="material-icons">forum</i></Link></li>
+                                        <li className=""><Link to="/eventos"><i className="material-icons">event_note</i></Link></li>
+                                        <li className=""><Link to="/utils"><i className="material-icons">settings</i></Link></li>
+                                        <li><Link onClick={this.logout} to="/logout"><i className="material-icons">logout</i></Link></li>
                                         <img src={imaGemA} width="64px" ></img>
                                     </ul>
                                 
@@ -99,17 +100,17 @@ class NavBar extends Component {
                                     <div className="background">
                                         <img src={imaGemBk} width="250"></img><img src={imaGemA}></img>
                                     </div>
-                                    <a href="/"><img className="circle" src={imaGemB} width="64px" /></a>
-                                    <a href="#name"><span className="CardB white-text name">CEFET | NF</span></a>
-                                    <a href="http://www.cefet-rj.br/"><span className="CardB white-text email">Cefet-RJ</span></a>
+                                    <Link to="/"><img className="circle" src={imaGemB} width="64px" /></Link>
+                                    <Link to="#name"><span className="CardB white-text name">CEFET | NF</span></Link>
+                                    <Link to="http://www.cefet-rj.br/"><span className="CardB white-text email">Cefet-RJ</span></Link>
                                 </div>
                             </li>
-                            <li><a href="/"><i className="material-icons">home</i>Início</a></li>
-                            <li><a href="/docentes"><i className="material-icons">school</i>Docentes</a></li>
-                            <li><a href="/talking"><i className="material-icons">comment</i>Conversa</a></li>
-                            <li><a href="/eventos"><i className="material-icons">event_note</i>Eventos</a></li>
-                            <li><a href="/utils"><i className="material-icons">settings</i>Útil</a></li>
-                            <li><a onClick={this.logout} href="/logout"><i className="material-icons">logout</i>Sair</a></li>
+                            <li><Link to="/"><i className="material-icons">home</i>Início</Link></li>
+                            <li><Link to="/docentes"><i className="material-icons">school</i>Docentes</Link></li>
+                            <li><Link to="/talking"><i className="material-icons">comment</i>Conversa</Link></li>
+                            <li><Link to="/eventos"><i className="material-icons">event_note</i>Eventos</Link></li>
+                            <li><Link to="/utils"><i className="material-icons">settings</i>Útil</Link></li>
+                            <li><Link onClick={this.logout} to="/logout"><i className="material-icons">logout</i>Sair</Link></li>
                         </ul>
                     </div>
                 </div>                
