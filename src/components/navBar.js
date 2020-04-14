@@ -78,7 +78,7 @@ class NavBar extends Component {
                             <div className="nav-wrapper blue darken-2">
 
                                 <Link to="/" className="brand-logo">Física</Link>
-                                <Link to="/" data-target="mobile-demo" clasName="sidenav-trigger pulse"><i className="material-icons"><i className="material-icons">view_list</i></i></Link>
+                                <a href="/" data-target="mobile-demo" className="sidenav-trigger pulse"><i className="material-icons"><i className="material-icons">view_list</i></i></a>
                                 
                                     <ul className="tabNav right hide-on-med-and-down" >
                                         <li className=""><Link to="/"><i className="material-icons">home</i></Link></li>
