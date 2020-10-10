@@ -1,6 +1,6 @@
 export function PostData(userData) {
     return new Promise((resolve, reject) => {
-        fetch('https://wp.artsystemti.com/wp-json/jwt-auth/v1/token', {
+        fetch('https://artsystemti.com/wp-json/jwt-auth/v1/token', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
